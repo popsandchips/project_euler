@@ -6,7 +6,7 @@ cat('\014')
 
 j=1
 i=1
-start=Sys.time()
+
 while(j<10001){
   i=i+2
   
@@ -19,10 +19,7 @@ while(j<10001){
   
   if(all(factor.check!=0)==T){
     j=j+1
-    print(j)
   }
 }
-end=Sys.time()
-print(start)
-print(end)
+
 print(i)

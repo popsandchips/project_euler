@@ -48,5 +48,4 @@ for(i in 1:nrow(sub.list)){
 
 largest.prod=max(sub.prod)
 
-print(sub.list[which(sub.prod==largest.prod),])
 print(largest.prod)
