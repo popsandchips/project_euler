@@ -12,7 +12,7 @@ cat('\014')
 library(numbers)
 
 num_seq = c(10000:998001)
-
+start=Sys.time()
 palindromes = c()
 for(i in num_seq){
   i=as.character(i)
@@ -50,5 +50,6 @@ for(p in palindromes){
     pal.list=c(pal.list,p)
   }
 }
-
+end=Sys.time()
 print(max(pal.list))
+print(paste('Started:',start,'End:',end,sep=''))
