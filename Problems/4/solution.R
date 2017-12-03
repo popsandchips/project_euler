@@ -4,7 +4,10 @@
 
 #Find the largest palindrome made from the product of two 3-digit numbers.
 
-#nothing that ends in 0 can be palindromic and it needs to be at least as large as 9009 
+
+rm(list=ls())
+cat('\014')
+
 
 library(numbers)
 
