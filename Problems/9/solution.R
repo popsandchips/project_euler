@@ -6,18 +6,20 @@
 
 rm(list=ls())
 cat('\014')
-
+print(paste('start:',Sys.time()))
 max = 500
 candidates=c()
 for(i in 1:max){
   for(j in 1:i){
     test = i^2 + j^2
     if(sqrt(test)%%1 == 0){
-      if((i + j + sqrt(test))==12){
-        next
+      even_sum=(i + j + sqrt(test))
+        if(even_sum==1000){
+          print(paste('digits:',i,j,sqrt(test)))
+          print(i*j*sqrt(test))
+        }
       }
     }
   }
-}
+print(paste('end:',Sys.time()))
 
-print(i,j,test)
